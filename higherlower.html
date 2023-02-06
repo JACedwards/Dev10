@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Higher - Lower</title>
+
+</head>
+<body style = "margin-top: 30px">
+    
+    <div class="container">
+        <h1>Higher - Lower</h1><br>
+        <p>First, input a number higher than 10.</p>
+        <p>Then, click the Range button</p>
+    <div class="row" style="margin-left:1px">  
+        <!-- <div class="col-lg-3 col-md-6"></div>  -->
+            <form>
+                <div class="form-group">
+                    <p id="range_message" style="font-weight: bold; color:blue"></p>
+                    
+                    <input type="text" id="upper_range" class="form-control" style = 'width:190px'>
+                </div>
+                <button type="button" class="btn btn-primary" style = 'width:190px' onclick="create_range()">Range</button>
+            </form> 
+        <!-- </div> -->
+    </div>
+    <br>
+    <p id="range_message2" style="font-weight: bold; color:blue"></p>
+    <p id="range_success_message" style="font-weight: bold; color:blue"></p>
+    <p id="range_success_message2" style="font-weight: bold; color:blue"></p>
+
+</div>
+
+
+<!-- Copy and paste from working basic1 version -->
+
+<div class="container">
+
+    <div class="row" style="margin-left:1px">  
+        <!-- <div class="col-lg-3 col-md-6"></div>  -->
+            <form>
+                <div class="form-group">
+                    <!-- <label>Your Guess:</label><br> -->
+                    <input type="text" id="guess" class="form-control" style = 'width:190px'>
+                </div>
+                <br>
+
+                <button type="button" class="btn btn-primary" style = 'width:190px' onclick="do_guess()">Guess</button>
+            </form> 
+        <!-- </div> -->
+    </div>
+    <br>
+    <p id="message" style="font-weight: bold; color:blue"></p>
+</div>
+
+<!-- Craig's first attempt at final version -->
+    
+    <!-- <div class="container">
+
+        <div class="row" style="margin-left:1px">  
+            
+                <form>
+                    <div class="form-group">
+                        
+                        <input type="text" id="guess" class="form-control" style = 'width:190px'>
+                    </div>
+                    <br>
+
+                    <button type="button" class="btn btn-primary" style = 'width:190px' onclick="guess()">Guess</button>
+                </form> 
+            
+        </div>
+        <br>
+        <p id="message" style="font-weight: bold; color:blue"></p>
+    </div> -->
+
+    
+    <!-- <script src="funcs.js"></script> -->
+    <script src="higherlower.js"></script>
+    
+    <!-- <script src="sandbox.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
