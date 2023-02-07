@@ -79,7 +79,7 @@ function do_guess() {
 
     
     if (isNaN(guess)) { 
-        console.log('we hit line 82 with range_success_message3' );
+        console.log('we hit line 82');
         range_success_message3.innerHTML = `"${guess}" is not a number. Please try again`
 
         // if (range_message2) {
@@ -96,7 +96,7 @@ function do_guess() {
 
     
     else if (guess_number > upper_range_pass | guess_number < 1) {
-        console.log('we hit line 99 using range_success_message3');
+        console.log('we hit line 99');
         // let range_message2 = document.getElementById("range_message2");
         range_success_message3.innerHTML = `Please enter a number that is within the 1-${Math.round(upper_range_pass)} range that you established above.`;
 
@@ -113,7 +113,7 @@ function do_guess() {
     }
 
     else if (guess_number == number_pass) {  //guessed correctly
-        console.log('we hit line 115 using message_green');
+        console.log('we hit line 115');
         guess_list.push(guess); 
         message_green.innerHTML = `That is the correct answer! It took you ${guess_list.length} tries, and your guesses were ${guess_list}.`
         if (range_message2) {
@@ -146,7 +146,7 @@ function do_guess() {
             // let check = guess_list.length
             
                 if(guess_list.includes(guess)){
-                    console.log(`we hit line 149 and guess_list = ${guess_list}  using range_success_message4`)
+                    console.log(`we hit line 149 and guess_list = ${guess_list}`)
 
                     console.log(`we hit line 151 and guess_number = ${guess_number}`)
                     range_success_message4.innerHTML = `You already guessed ${guess_number}. Try a new number.`;
@@ -155,7 +155,7 @@ function do_guess() {
                 else {
                     console.log('we hit line 156');
                     guess_list.push(guess);
-                    console.log(`we hit line 158 and guess_list = ${guess_list} using range_success_message4`)
+                    console.log(`we hit line 158 and guess_list = ${guess_list}`)
                     range_success_message4.innerHTML = `${guess_number} is too high. Try a lower number.`;
                 }
             }
@@ -167,7 +167,7 @@ function do_guess() {
             console.log('the length of guestlist is 0 at 167')
             guess_list.push(guess);
             console.log(`now this is the guest_list ${guess_list} at 169`);
-            console.log(`we hit line 170 and gguess = ${guess} using range_success_message4`)
+            console.log(`we hit line 170 and gguess = ${guess}`)
             range_success_message4.innerHTML = `${guess_number} is too high. Try a lower number.`;
         }
         }
@@ -192,14 +192,14 @@ function do_guess() {
                 if(guess_list.includes(guess)){
                     console.log(`we hit line 193 and guess_list = ${guess_list}`)
 
-                    console.log(`we hit line 195 and guess_number = ${guess_number}, using range_success_message4`)
+                    console.log(`we hit line 195 and guess_number = ${guess_number}`)
                     range_success_message4.innerHTML = `You already guessed ${guess_number}. Try a new number.`;
                 }
 
                 else {
                     console.log('we hit line 200');
                     guess_list.push(guess);
-                    console.log(`we hit line 202 and guess_list = ${guess_list} using range_success_message4`)
+                    console.log(`we hit line 202 and guess_list = ${guess_list}`)
                     range_success_message4.innerHTML = `${guess_number} is too low. Try a higher number.`;
                 }
             }
@@ -211,7 +211,7 @@ function do_guess() {
             console.log('the length of guestlist is 0 at 211')
             guess_list.push(guess);
             console.log(`now this is the guest_list ${guess_list} at 213`);
-            console.log(`we hit line 214 and gguess = ${guess} range_success_message4`)
+            console.log(`we hit line 214 and gguess = ${guess}`)
             range_success_message4.innerHTML = `${guess_number} is too low. Try a higher number.`;
         }
         }
