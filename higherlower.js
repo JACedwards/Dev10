@@ -113,7 +113,7 @@ function do_guess() {
         guess_list.push(guess); 
         $("#range_success_message4").hide()
         $("#range_success_message3").hide()
-        message_green.innerHTML = `That is the correct answer! It took you ${guess_list.length} valid attempts, and your guesses were ${guess_list}.`
+        message_green.innerHTML = `That is the correct answer! It took you ${guess_list.length} valid attempts, and your guesses were ${guess_list.join(', ')}.`
 
         }
 
